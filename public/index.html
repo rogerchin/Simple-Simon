@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<script type="text/javascript" src="/js/jquery-1.11.3.js"></script>
+		<script type="text/javascript" src="/js/simple_simon.js"></script>
+		<link rel="stylesheet" href="/css/simple_simon.css" type="text/css">
+		<script type="text/javascript" src="js/jscolor.js"></script>
+		<title>Simple Simon</title>
+		
+	</head>
+	<body>
+		
+		<div class="wrapper">
+			<div class="back">
+				<div class="pad shape1" data-pad="1"></div>
+				<div class="pad shape2" data-pad="2"></div>
+				<div class="pad shape3" data-pad="3"></div>
+				<div class="pad shape4" data-pad="4"></div>
+				<div class="circle"></div>
+			</div>
+			<div class="sButton">
+			<button class="start">Start</button>
+			</div>
+			<div class="level"><h2>Level: 1</h2></div>
+			<div class="score"><h2>Score: 0</h2></div>
+			<div class="selector">
+				<p> Pick your colors: </p>
+				1<input class="color" onchange="$('.shape1')[0].style.backgroundColor = '#' +this.color">
+				2<input class="color" onchange="$('.shape2')[0].style.backgroundColor = '#' +this.color">
+				3<input class="color" onchange="$('.shape3')[0].style.backgroundColor = '#' +this.color">
+				4<input class="color" onchange="$('.shape4')[0].style.backgroundColor = '#' +this.color">
+			</div>
+
+	</body>
+</html>
